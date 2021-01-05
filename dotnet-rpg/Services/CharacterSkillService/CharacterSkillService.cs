@@ -33,7 +33,7 @@ namespace dotnet_rpg.Services.CharacterSkillService
             {
                 Character character = await _context.Characters
                     .Include(c => c.Weapon)
-                    .Include(c => c.CharacterSkills).ThenInclude(cs =>cs.Skill)
+                    .Include(c => c.CharacterSkills).ThenInclude(cs => cs.Skill)
                     .FirstOrDefaultAsync(c => c.Id == newCharacterSkill.CharacterId &&
                      c.User.Id == int.Parse(_httpContextAccessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier)));
 

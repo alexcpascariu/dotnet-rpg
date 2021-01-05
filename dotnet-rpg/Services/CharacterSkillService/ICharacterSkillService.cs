@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_rpg.Services.CharacterSkillService
 {
-    interface ICharacterSkillService
+    public interface ICharacterSkillService
     {
         Task<ServiceResponse<GetCharacterDto>> AddCharacterSkill(AddCharacterSkillDto newCharacterSkill);
     }
