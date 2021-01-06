@@ -101,7 +101,7 @@ namespace dotnet_rpg.Services.CharacterService
                 {
                     character.Name = updatedCharacter.Name;
                     character.Class = updatedCharacter.Class;
-                    character.Defence = updatedCharacter.Defence;
+                    character.Defense = updatedCharacter.Defense;
                     character.Hitpoints = updatedCharacter.Hitpoints;
                     character.Intelligence = updatedCharacter.Intelligence;
                     character.Strength = updatedCharacter.Strength;
